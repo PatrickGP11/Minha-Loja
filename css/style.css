@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.produtos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex-direction: column;
+    display: flex;
+    width: 476px;
+    border: 1px solid #00000029;
+    border-radius: 6px;
+    border-radius: 16px;
+    box-shadow: 4px 4px 10px #00000029;
+
+    img {
+        width: 300px;
+        margin: auto;
+    }
+
+    & .content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px;
+
+        & .title {
+
+            & h2 {
+                margin-bottom: 26px;
+            }
+        }
+
+        & .btns {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            & p {
+                color: #21a9fb;
+                font-weight: bold;
+                font-size: 18px;
+            }
+
+            & button {
+                padding: 14px;
+                border-radius: 100px;
+                border: none;
+                background: linear-gradient(to right, #138CFF, #16137468);
+                color: #fff;
+                font-weight: 700;
+            }
+        }
+
+        & .freight {
+            display: flex;
+            gap: 15px;
+
+            & p {
+                font-size: 12px;
+                color: #9a9a9a;
+            }
+
+            & i {
+                color: #9a9a9a;
+            }
+        }
+    }
+}
